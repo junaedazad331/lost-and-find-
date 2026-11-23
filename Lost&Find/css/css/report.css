@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f3f6fc;
+    color: #172b4d;
+    padding: 35px 15px;
+}
+
+.report-container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.report-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.back {
+    display: inline-block;
+    color: #2456a6;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.report-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.report-header p {
+    color: #8491a5;
+}
+
+.report-card {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(30,50,90,0.06);
+}
+
+.report-card h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #8794a8;
+    margin-bottom: 25px;
+}
+
+.report-card label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px 0 9px;
+}
+
+.report-card input,
+.report-card select,
+.report-card textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce3ee;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    background: white;
+}
+
+.report-card input:focus,
+.report-card select:focus,
+.report-card textarea:focus {
+    border-color: #3269c8;
+    box-shadow: 0 0 0 3px rgba(50,105,200,0.08);
+}
+
+.report-card textarea {
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.notice {
+    background: #edf4ff;
+    color: #2855a1;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-top: 25px;
+}
+
+.report-card button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #2456a6;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.report-card button:hover {
+    background: #173d7b;
+}
+
+@media(max-width: 600px) {
+    .report-card {
+        padding: 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .report-header h1 {
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Lost & Find</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<div class="auth-wrapper">
+
+    <div class="auth-left">
+        <div class="brand">Lost<span>&</span>Find</div>
+
+        <div class="hero-content">
+            <h1>Welcome Back!</h1>
+            <p>
+                Log in to report lost items,
+                find belongings and help others.
+            </p>
+        </div>
+
+        <div class="auth-footer">
+            Together, we make a difference.
+        </div>
+    </div>
+
+    <div class="auth-right">
+
+        <div class="form-container">
+
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Login to your account</p>
+
+            <form action="login.php" method="POST">
+
+                <label>Email Address</label>
+                <input type="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" name="password"
+                       placeholder="Enter your password" required>
+
+                <button type="submit">Login Now</button>
+
+            </form>
+
+            <p class="switch">
+                Don't have an account?
+                <a href="signup.html">Sign Up</a>
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
